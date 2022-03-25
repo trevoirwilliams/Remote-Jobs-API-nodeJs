@@ -45,4 +45,9 @@ app.get('/remotejobs/:sourceId', (req, res) => {
     }); 
 });
 
+app.get('/jobs/sources', (req, res) => {
+    const result = parsers.map(src => ({ Name: src.Name, sourceId: src.sourceId }));
+    res.json(result);
+});
+
 app.listen(PORT, () => {console.log(`Server running on ${PORT}`)})
