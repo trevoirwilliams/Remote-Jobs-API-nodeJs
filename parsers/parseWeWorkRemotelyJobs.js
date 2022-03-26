@@ -5,6 +5,7 @@ const weworkUrl = "https://weworkremotely.com";
 const jobs = [];
 const Name = "We Work Remotely"
 const sourceId = "wework";
+exports.Name= Name;
 exports.url = weworkUrl;
 exports.axiosRequest = axios.get(weworkUrl);
 exports.sourceId = sourceId;

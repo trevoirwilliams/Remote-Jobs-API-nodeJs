@@ -40,7 +40,7 @@ module.exports = function (app) {
     });
     
     app.get('/jobs/sources', (req, res) => {
-        const result = parsers.map(src => ({ Name: src.Name, sourceId: src.sourceId }));
+        const result = parsers.map(src => ({ Name: src.Name, SourceId: src.sourceId }));
         res.json(result);
     });
 

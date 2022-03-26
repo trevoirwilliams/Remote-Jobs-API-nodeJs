@@ -5,6 +5,7 @@ const jobs = [];
 const Name = "Stack Overflow";
 const sourceId = "stack";
 
+exports.Name= Name;
 exports.sourceId = sourceId;
 exports.url = stackoverflowUrl;
 exports.axiosRequest = axios.get(stackoverflowUrl + "/jobs?r=true");
